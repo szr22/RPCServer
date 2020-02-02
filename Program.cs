@@ -2,7 +2,7 @@
 using System.Text;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
-
+using CalculationServise;
 
 namespace RPCServer
 {
@@ -40,7 +40,7 @@ namespace RPCServer
                             var message = Encoding.UTF8.GetString(body);
                             int n = int.Parse(message);
                             Console.WriteLine(" [.] fib({0})", message);
-                            response = fib(n).ToString();
+                            response = FibCalculation.fib(n).ToString();
                         }
                         catch (Exception e)
                         {
@@ -58,12 +58,6 @@ namespace RPCServer
                     }
                 }
             }
-        }
-
-        private static int fib(int n)
-        {
-            if (n == 0 || n == 1) return n;
-            return fib(n - 1) + fib(n - 2);
         }
     }
 }
