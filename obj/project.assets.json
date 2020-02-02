@@ -207,6 +207,15 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "RabbitMQ.Client/5.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {}
+        }
       }
     }
   },
@@ -681,11 +690,29 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "RabbitMQ.Client/5.1.2": {
+      "sha512": "Xhj+un0pw4N7h37SZWptxl/NEv7f1RLHwZhXjqzkCm3w3IdbFJh+HjVyPaciD848BUYLGoEQzadx90nShsbs4Q==",
+      "type": "package",
+      "path": "rabbitmq.client/5.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/RabbitMQ.Client.dll",
+        "lib/net451/RabbitMQ.Client.xml",
+        "lib/netstandard1.5/RabbitMQ.Client.dll",
+        "lib/netstandard1.5/RabbitMQ.Client.xml",
+        "lib/netstandard2.0/RabbitMQ.Client.dll",
+        "lib/netstandard2.0/RabbitMQ.Client.xml",
+        "rabbitmq.client.5.1.2.nupkg.sha512",
+        "rabbitmq.client.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "RabbitMQ.Client >= 5.1.2"
     ]
   },
   "packageFolders": {
@@ -695,11 +722,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/zhenrongshi/Projects/RPCServer/RPCServer/RPCServer.csproj",
+      "projectUniqueName": "/Users/zhenrongshi/Projects/RPCServer/RPCServer.csproj",
       "projectName": "RPCServer",
-      "projectPath": "/Users/zhenrongshi/Projects/RPCServer/RPCServer/RPCServer.csproj",
+      "projectPath": "/Users/zhenrongshi/Projects/RPCServer/RPCServer.csproj",
       "packagesPath": "/Users/zhenrongshi/.nuget/packages/",
-      "outputPath": "/Users/zhenrongshi/Projects/RPCServer/RPCServer/obj/",
+      "outputPath": "/Users/zhenrongshi/Projects/RPCServer/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -731,6 +758,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "RabbitMQ.Client": {
+            "target": "Package",
+            "version": "[5.1.2, )"
           }
         },
         "imports": [

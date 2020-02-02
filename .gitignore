@@ -1,0 +1,5 @@
+
+*.dll
+*.pdb
+*.cache
+obj/Debug/netcoreapp2.1/RPCServer.csproj.FileListAbsolute.txt
