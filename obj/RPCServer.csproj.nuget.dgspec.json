@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/zhenrongshi/Projects/RPCServer/RPCServer/RPCServer.csproj": {}
+  },
+  "projects": {
+    "/Users/zhenrongshi/Projects/RPCServer/RPCServer/RPCServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/zhenrongshi/Projects/RPCServer/RPCServer/RPCServer.csproj",
+        "projectName": "RPCServer",
+        "projectPath": "/Users/zhenrongshi/Projects/RPCServer/RPCServer/RPCServer.csproj",
+        "packagesPath": "/Users/zhenrongshi/.nuget/packages/",
+        "outputPath": "/Users/zhenrongshi/Projects/RPCServer/RPCServer/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/zhenrongshi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
